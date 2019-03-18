@@ -16,7 +16,7 @@ extension UIViewController {
 extension UIViewController {
     
     public func embedContainerView(_ controller: UIViewController, containerView: UIView) {
-        addChildViewController(controller)
+        addChild(controller)
         controller.view.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(controller.view)
         
@@ -27,7 +27,7 @@ extension UIViewController {
             controller.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
             ])
         
-        controller.didMove(toParentViewController: self)
+        controller.didMove(toParent: self)
     }
 }
 
@@ -35,9 +35,9 @@ extension UIViewController {
 extension UIViewController {
     
     open func initBackgroundable() {
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationBecameActive), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationBecameInactive), name: NSNotification.Name.UIApplicationWillResignActive, object: nil) // selector "methodname:" also possible?
-        applicationBecameActive(notification:NSNotification(name: NSNotification.Name.UIApplicationDidBecomeActive,object:nil))
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationBecameActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationBecameInactive), name: UIApplication.willResignActiveNotification, object: nil) // selector "methodname:" also possible?
+        applicationBecameActive(notification:NSNotification(name: UIApplication.didBecomeActiveNotification,object:nil))
     }
     
     @objc open func applicationBecameActive(notification: NSNotification) {
