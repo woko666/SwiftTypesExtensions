@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Woko' => 'woko@centrum.cz' }
   s.source           = { :git => "https://github.com/woko666/SwiftTypesExtensions.git" }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files  = ["Sources/*.swift"]
   s.library = 'iconv'
