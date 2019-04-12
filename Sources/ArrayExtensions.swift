@@ -2,7 +2,7 @@ import Foundation
 
 public extension Array {
     
-    public func filterDuplicates(_ includeElement: @escaping(_ lhs:Element, _ rhs:Element) -> Bool) -> [Element]{
+    func filterDuplicates(_ includeElement: @escaping(_ lhs:Element, _ rhs:Element) -> Bool) -> [Element]{
         var results = [Element]()
         
         forEach { (element) in
@@ -19,7 +19,7 @@ public extension Array {
 }
 
 public extension Array where Element:Equatable {
-    public func removeDuplicates() -> [Element] {
+    func removeDuplicates() -> [Element] {
         var result = [Element]()
         
         for value in self {
@@ -31,7 +31,7 @@ public extension Array where Element:Equatable {
         return result
     }
     
-    public func equalsTo(_ other:[Element]) -> Bool {
+    func equalsTo(_ other:[Element]) -> Bool {
         guard self.count == other.count else { return false }
         
         for i in 0..<self.count {
@@ -42,7 +42,7 @@ public extension Array where Element:Equatable {
         return true
     }
     
-    @discardableResult mutating public func remove(element: Element) -> Bool {
+    @discardableResult mutating func remove(element: Element) -> Bool {
         if let index = self.index(of: element) {
             self.remove(at: index)
             return true
@@ -50,7 +50,15 @@ public extension Array where Element:Equatable {
         return false
     }
     
-    @discardableResult mutating public func appendIfNotExists( _ element: Element) -> Bool {
+    @discardableResult mutating func removeFirst(where: (Element) throws -> Bool) rethrows -> Bool {
+        if let index = try self.firstIndex(where: `where`) {
+            self.remove(at: index)
+            return true
+        }
+        return false
+    }
+    
+    @discardableResult mutating func appendIfNotExists(_ element: Element) -> Bool {
         if !self.contains(element) {
             self.append(element)
             return true
@@ -58,14 +66,14 @@ public extension Array where Element:Equatable {
         return false
     }
     
-    @discardableResult mutating public func appendIfNotExists( _ element: Element?) -> Bool {
+    @discardableResult mutating func appendIfNotExists(_ element: Element?) -> Bool {
         guard let element = element else { return false }
         return appendIfNotExists(element)
     }
 }
 
 public extension Array where Element:Hashable {
-    public func toDictionaryKeys<Val: Any>(value: Val) -> [Element:Val] {
+    func toDictionaryKeys<Val: Any>(value: Val) -> [Element:Val] {
         var dict = [Element:Val]()
         for element in self {
             dict[element] = value
