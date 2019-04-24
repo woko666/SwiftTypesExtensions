@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F803D027227094E3001FB412 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F803D026227094E3001FB412 /* DictionaryExtensions.swift */; };
 		F835693B223F885A008AB794 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8356932223F8859008AB794 /* StringExtensions.swift */; };
 		F835693C223F885A008AB794 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8356933223F8859008AB794 /* UIButtonExtensions.swift */; };
 		F835693D223F885A008AB794 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8356934223F8859008AB794 /* UIImageViewExtensions.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F803D026227094E3001FB412 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		F8356932223F8859008AB794 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F8356933223F8859008AB794 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		F8356934223F8859008AB794 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		F8662801212031790024B379 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F803D026227094E3001FB412 /* DictionaryExtensions.swift */,
 				F8356937223F8859008AB794 /* ArrayExtensions.swift */,
 				F835693A223F885A008AB794 /* DataExtensions.swift */,
 				F8356938223F885A008AB794 /* JSONExtensions.swift */,
@@ -163,6 +166,7 @@
 				F8356942223F885A008AB794 /* UIImageExtensions.swift in Sources */,
 				F8356943223F885A008AB794 /* DataExtensions.swift in Sources */,
 				F835693B223F885A008AB794 /* StringExtensions.swift in Sources */,
+				F803D027227094E3001FB412 /* DictionaryExtensions.swift in Sources */,
 				F835693E223F885A008AB794 /* UIViewControllerExtensions.swift in Sources */,
 				F8356940223F885A008AB794 /* ArrayExtensions.swift in Sources */,
 				F835693C223F885A008AB794 /* UIButtonExtensions.swift in Sources */,
