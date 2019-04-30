@@ -3,6 +3,10 @@ import Foundation
 // regex
 public extension String
 {
+    var diacriticsStripped: String {
+        return folding(options: .diacriticInsensitive, locale: .current)
+    }
+    
     public var nfc:String {
         return (self as NSString).precomposedStringWithCanonicalMapping
     }
