@@ -17,6 +17,7 @@
 		F8356941223F885A008AB794 /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8356938223F885A008AB794 /* JSONExtensions.swift */; };
 		F8356942223F885A008AB794 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8356939223F885A008AB794 /* UIImageExtensions.swift */; };
 		F8356943223F885A008AB794 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835693A223F885A008AB794 /* DataExtensions.swift */; };
+		F84B728822800F1700BF4EDB /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B728722800F1700BF4EDB /* UIColor.swift */; };
 		F8662804212031790024B379 /* IosUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F8662802212031790024B379 /* IosUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		F8356938223F885A008AB794 /* JSONExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtensions.swift; sourceTree = "<group>"; };
 		F8356939223F885A008AB794 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		F835693A223F885A008AB794 /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		F84B728722800F1700BF4EDB /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F86627FF212031790024B379 /* IosUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IosUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8662802212031790024B379 /* IosUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IosUtils.h; sourceTree = "<group>"; };
 		F8662803212031790024B379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				F8356934223F8859008AB794 /* UIImageViewExtensions.swift */,
 				F8356935223F8859008AB794 /* UIViewControllerExtensions.swift */,
 				F8356936223F8859008AB794 /* URLExtensions.swift */,
+				F84B728722800F1700BF4EDB /* UIColor.swift */,
 				F8662802212031790024B379 /* IosUtils.h */,
 				F8662803212031790024B379 /* Info.plist */,
 			);
@@ -168,6 +171,7 @@
 				F835693B223F885A008AB794 /* StringExtensions.swift in Sources */,
 				F803D027227094E3001FB412 /* DictionaryExtensions.swift in Sources */,
 				F835693E223F885A008AB794 /* UIViewControllerExtensions.swift in Sources */,
+				F84B728822800F1700BF4EDB /* UIColor.swift in Sources */,
 				F8356940223F885A008AB794 /* ArrayExtensions.swift in Sources */,
 				F835693C223F885A008AB794 /* UIButtonExtensions.swift in Sources */,
 				F835693D223F885A008AB794 /* UIImageViewExtensions.swift in Sources */,
