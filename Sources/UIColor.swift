@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    convenience init(hexString: String) {
+    public convenience init(hexString: String) {
         let hexString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
         let scanner = Scanner(string: hexString)
         
@@ -25,7 +25,7 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: 1)
     }
     
-    var hexString: String {
+    public var hexString: String {
         var r: CGFloat = 0
         var g: CGFloat = 0
         var b: CGFloat = 0
