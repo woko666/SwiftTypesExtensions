@@ -15,4 +15,18 @@ public extension Dictionary {
         
         return items.map { $0.1 }
     }
+    
+    var values: [Entry<Key, Value>] {
+        var res: [Entry<Key, Value>] = []
+        self.forEach {
+            res.append(Entry(key: $0, value: $1))
+        }
+        return res
+    }
+    
+    public struct Entry<Key, Value> {
+        var key: Key
+        var value: Value
+    }
 }
+
