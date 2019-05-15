@@ -25,8 +25,8 @@ public extension Dictionary {
     }
     
     public struct Entry<Key, Value> {
-        var key: Key
-        var value: Value
+        public var key: Key
+        public var value: Value
     }
 }
 
